@@ -1,0 +1,26 @@
+*{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+h1{
+    font-size: 5vw;
+}
+h2{
+    font-size: 50px;
+}
+
+header{
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.board{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border: 4px solid black;
+    margin: 50px;
+}
