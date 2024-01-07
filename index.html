@@ -8,17 +8,72 @@
 </head>
 <body>
     <header>
-        <h1>Battleship</h1>
+        <h1 id="title">Battleship</h1>
     </header>
     <section>
-        <div>
+        <div id="playerBattlefield">
             <h2>Your Battlefield</h2>
-            <div class="board"></div>
+            <div id="boardContainer">
+                <div id="X-axis">
+                    <h3 id="gridSpotX">0</h3>
+                    <h3 id="gridSpotX">1</h3>
+                    <h3 id="gridSpotX">2</h3>
+                    <h3 id="gridSpotX">3</h3>
+                    <h3 id="gridSpotX">4</h3>
+                    <h3 id="gridSpotX">5</h3>
+                    <h3 id="gridSpotX">6</h3>
+                    <h3 id="gridSpotX">7</h3>
+                    <h3 id="gridSpotX">8</h3>
+                    <h3 id="gridSpotX">9</h3>
+                </div>
+                <div id="Y-axis">
+                    <h3 id="gridSpotY">0</h3>
+                    <h3 id="gridSpotY">1</h3>
+                    <h3 id="gridSpotY">2</h3>
+                    <h3 id="gridSpotY">3</h3>
+                    <h3 id="gridSpotY">4</h3>
+                    <h3 id="gridSpotY">5</h3>
+                    <h3 id="gridSpotY">6</h3>
+                    <h3 id="gridSpotY">7</h3>
+                    <h3 id="gridSpotY">8</h3>
+                    <h3 id="gridSpotY">9</h3>
+                </div>
+                <div class="board" id="playerBoard"></div>
+            </div>
         </div>
         <div id="opponentBattlefield">
             <h2>Your Opponent's Battlefield</h2>
-            <div class="board"></div>
+            <div id="boardContainer">
+                <div id="X-axis">
+                    <h3 id="gridSpotX">0</h3>
+                    <h3 id="gridSpotX">1</h3>
+                    <h3 id="gridSpotX">2</h3>
+                    <h3 id="gridSpotX">3</h3>
+                    <h3 id="gridSpotX">4</h3>
+                    <h3 id="gridSpotX">5</h3>
+                    <h3 id="gridSpotX">6</h3>
+                    <h3 id="gridSpotX">7</h3>
+                    <h3 id="gridSpotX">8</h3>
+                    <h3 id="gridSpotX">9</h3>
+                </div>
+                <div id="Y-axis">
+                    <h3 id="gridSpotY">0</h3>
+                    <h3 id="gridSpotY">1</h3>
+                    <h3 id="gridSpotY">2</h3>
+                    <h3 id="gridSpotY">3</h3>
+                    <h3 id="gridSpotY">4</h3>
+                    <h3 id="gridSpotY">5</h3>
+                    <h3 id="gridSpotY">6</h3>
+                    <h3 id="gridSpotY">7</h3>
+                    <h3 id="gridSpotY">8</h3>
+                    <h3 id="gridSpotY">9</h3>
+                </div>
+                <div class="board" id="opponentBoard"></div>
+            </div>
         </div>
     </section>
+    <section id="startButtonArea"></section>
+
+    <script src="./script.js"></script>
 </body>
 </html>

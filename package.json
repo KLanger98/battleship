@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/KLanger98/battleship/issues"
   },
-  "homepage": "https://github.com/KLanger98/battleship#readme"
+  "homepage": "https://github.com/KLanger98/battleship#readme",
+  "jest": {
+  "testEnvironment": "jsdom",
+  "testMatch": [
+    "**/__tests__/**/*.js?(x)",
+    "**/?(*.)+(spec|test).js?(x)"
+  ]
+}
 }

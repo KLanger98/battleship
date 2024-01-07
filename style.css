@@ -3,8 +3,8 @@
     text-align: center;
 }
 
-h1{
-    font-size: 5vw;
+#title{
+    font-size: 50px;
 }
 h2{
     font-size: 50px;
@@ -14,10 +14,93 @@ section{
     display: flex;
     justify-content: center;
 }
+#boardContainer{
+    display: grid;
+    grid-template-columns: 60px 608px;
+    grid-template-rows: 60px 608px;
+
+}
+#Y-axis{
+    grid-area: 1 / 2 / 1 / 2;
+    display: flex;
+}
+#X-axis{
+    grid-area: 2 / 1 / 3 / 3;
+    
+}
 .board{
     width: 600px;
     height: 600px;
     background-color: white;
     border: 4px solid black;
     margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    
+}
+.tile{
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    background: white;
+}
+
+.tile:hover{
+    border: 3px solid rgb(221, 38, 38);
+    z-index: 1;
+}
+.ship{
+    background-color: blue;
+}
+.miss{
+    background-color: red;
+}
+.shipHit{
+    background-color: purple;
+}
+#gridSpotX{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 3px 10px 3px 0px;
+}
+#gridSpotY{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 3px 10px 3px 0px;
+}
+
+.gameOver{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.gameOverHeading{
+    color: white;
+    font-size: 100px;
+    background-color: black;
+    opacity: 1.0;
+    height: 100px;
+}
+.restartBtn{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    font-size: 30px;
+    box-shadow: 5px 10px grey;
+}
+
+#startBtn{
+    width: 200px;
+    font-size: 30px;
+    height: 50px;
+    background-color: white;
 }
